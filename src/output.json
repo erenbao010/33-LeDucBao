@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "year": "1995",
+      "children": [
+        {
+          "type": "Imports",
+          "children": [
+            {
+              "continent": "North America",
+              "children": [
+                {
+                  "country": "Greenland",
+                  "value": 7.6,
+                  "adj_value": 11.81952
+                },
+                {
+                  "country": "Canada",
+                  "value": 144369.9,
+                  "adj_value": 224524.0685
+                },
+                {
+                  "country": "St Pierre and Miquelon",
+                  "value": 3.4,
+                  "adj_value": 5.28768
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
