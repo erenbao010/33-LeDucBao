@@ -17,22 +17,10 @@ function createUser(req, res, next) {
 
 
 route.post("/getUser", createUser, (req, res) => {
-  ABC.push(req.body);
-    
-  res.json(ABC);
+
 });
 
-const generateBefore = performance.now();
-function generate(req, res) {
-    res.send({size
-        })
-    }
-    route.post("/getUser", generate, (req, res) => {
-        res.send("add users");
-    });
 
-const generateAfter = performance.now();
-console.log (performance = generateAfter - generateBefore);
 module.exports = route;
 
 
