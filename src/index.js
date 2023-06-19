@@ -4,11 +4,11 @@ const app = express();
 const port = 8000;
 app.use(express.json());
 
-// API to receive data and save it to the server side
+
 app.post('/api/send-data', (req, res) => {
   const data = req.body;
 
-  // Save data to a file named "output.json"
+  // save data 
   fs.writeFile('src/output.json', JSON.stringify(data), (err) => {
     if (err) {
       console.error(err);
@@ -19,7 +19,8 @@ app.post('/api/send-data', (req, res) => {
   });
 });
 
-// API to get all data from "output.json"
+
+// get api all data 
 app.get('/api/get-all-data', (req, res) => {
   fs.readFile('src/output.json', 'utf8', (err, data) => {
     if (err) {
@@ -33,7 +34,8 @@ app.get('/api/get-all-data', (req, res) => {
   });
 });
 
-// API to get data based on the "country" filter parameter
+
+// get API data country
 app.get('/api/get-data-by-country', (req, res) => {
   const country = req.query.country;
 
@@ -49,7 +51,7 @@ app.get('/api/get-data-by-country', (req, res) => {
   });
 });
 
-// Start the server
+
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
