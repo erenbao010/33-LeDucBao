@@ -2,7 +2,7 @@ package OOP_java;
 
  class collegeStudent extends Student{
     public collegeStudent (int studentId,String school, String classes, String gender, String name){
-        super(name,gender,classes, studentId,school);
+        super(name,gender,classes);
     }
 //    @Override
 //     public void run(){
